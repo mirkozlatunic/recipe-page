@@ -22,8 +22,7 @@ td {
 }
 
 h1,
-h2,
-h3 {
+h2 {
   font-family: Young serif;
   font-weight: 400;
   color: hsl(14, 45%, 36%);
@@ -57,10 +56,11 @@ span {
 }
 
 h3 {
-  font-style: semi-bold;
-  font-weight: 400;
+  font-style: outfit;
+  font-weight: 600;
   color: hsl(332, 51%, 32%);
   margin: 0;
+  padding-bottom: 24px;
 }
 
 ul,
@@ -78,7 +78,9 @@ div:last-child {
 }
 
 hr {
+  border: 0;
   border-bottom: 1px solid hsl(30, 18%, 87%);
+  margin: 0;
 }
 
 table {
@@ -98,7 +100,7 @@ td:last-child {
   font-weight: 700;
 }
 
-.recipe__content {
+section {
   background-color: #fff;
   padding: 40px;
   border-radius: 24px;
@@ -118,4 +120,39 @@ td:last-child {
 
 .table__last {
   border-bottom: none;
+}
+
+@media (max-width: 375px) {
+  section {
+    width: auto;
+    margin: auto;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  img {
+    max-width: 375px;
+    height: 171px;
+    border-radius: 0;
+  }
+
+  div {
+    margin: 40px 32px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  li {
+    font-size: 17px;
+  }
+
+  .recipe__title {
+    margin-top: 40px;
+  }
 }
